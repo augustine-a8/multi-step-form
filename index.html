@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-magnolia">
+
+  <main class="flex">
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <div class="sidebar-step active">
+        <div class="sidebar-step-num center txt-clr-white">1</div>
+        <div class="sidebar-step-info txt-clr-white">
+          <p>Step 1</p>
+          <p class="sidebar-step-name">Your info</p>
+        </div>
+      </div>
+
+      <div class="sidebar-step"> 
+        <div class="sidebar-step-num center txt-clr-white">2</div>
+        <div class="sidebar-step-info txt-clr-white">
+          <p>Step 2</p>
+          <p class="sidebar-step-name">Select plan</p>
+        </div>
+      </div>
+
+      <div class="sidebar-step">
+        <div class="sidebar-step-num center txt-clr-white">3</div>
+        <div class="sidebar-step-info txt-clr-white">
+          <p>Step 3</p>
+          <p class="sidebar-step-name">Add-ons</p>
+        </div>
+      </div>
+
+      <div class="sidebar-step">
+        <div class="sidebar-step-num center txt-clr-white">4</div>
+        <div class="sidebar-step-info txt-clr-white">
+          <p>Step 4</p>
+          <p class="sidebar-step-name">Summary</p>
+        </div>
+      </div>
+    </div>
+    <!-- Sidebar end -->
+
+    <form action="" class="form">
+      <!-- Step 1 start -->   
+      <div class="form-step active">
+        <h1 class="txt-clr-marine-blue form-step-head">Personal info</h1>
+        <p class="txt-clr-cool-gray form-step-desc">Please provide your name, email address, and phone number.</p>
+
+        <div class="main-form">
+          <div class="form-control">
+            <span class="label-div">
+              <label for="name" class="txt-clr-marine-blue fw-500">Name</label>
+              <label for="name" class="txt-clr-red fw-500">This field is required</label>
+            </span>
+            <input type="text" id="name" placeholder="e.g. Stephen King">
+          </div>
+  
+          <div class="form-control">
+            <span class="label-div">
+              <label for="email" class="txt-clr-marine-blue fw-500">Email Address</label>
+              <label for="name" class="txt-clr-red fw-500">This field is required</label>
+            </span>
+            <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
+          </div>
+  
+          <div class="form-control">
+            <span class="label-div">
+              <label for="phone" class="txt-clr-marine-blue fw-500">Phone Number</label>
+              <label for="name" class="txt-clr-red fw-500">This field is required</label>
+            </span>
+            <input type="tel" id="phone" placeholder="e.g. +1 234 567 890">
+          </div>
+        </div>
+
+        <div class="form-jump">
+          <a href="#" class="nxt-form-btn">Next Step</a>
+        </div>
+      </div>
+      <!-- Step 1 end -->
+
+      <!-- Step 2 start -->
+      <div class="form-step">
+        <h1 class="form-step-head txt-clr-marine-blue">Select your plan</h1>
+        <p class="form-step-desc txt-clr-cool-gray">You have the option of monthly or yearly billing.</p>
+
+        <div class="radio-group active">
+          <div class="custom-radio">
+            <label for="arcade-monthly">
+              <div>
+                <img src="./assets/images/icon-arcade.svg" alt="arcade icon">
+              </div>
+  
+              <div class="custom-radio-info">
+                <h2>Arcade</h2>
+                <p>$9/mo</p>
+              </div>
+            </label>
+            <input type="radio" name="plan" id="arcade-monthly" value="9">
+          </div>
+
+         <div class="custom-radio">
+          <label for="advanced-monthly">
+            <div>
+              <img src="./assets/images/icon-advanced.svg" alt="advanced icon">
+            </div>
+
+           <div class="custom-radio-info">
+            <h2>Advanced</h2>
+            <p>$12/mo</p>
+           </div>
+          </label>
+          <input type="radio" name="plan" id="advanced-monthly" value="12">
+         </div>
+          
+          <div class="custom-radio">
+            <label for="pro-monthly">
+              <div>
+                <img src="./assets/images/icon-pro.svg" alt="pro icon">
+              </div>
+  
+              <div class="custom-radio-info">
+                <h2>Pro</h2>
+                <p>$15/mo</p>
+              </div>
+            </label>
+            <input type="radio" name="plan" id="pro-monthly" value="15">
+          </div>
+        </div>
+
+        <div class="radio-group">
+          <div class="custom-radio">
+            <label for="arcade-yearly">
+              <div>
+                <img src="./assets/images/icon-arcade.svg" alt="arcade icon">
+              </div>
+  
+              <div class="custom-radio-info">
+                <h2>Arcade</h2>
+                <p>$90/yr</p>
+                <small>2 months free</small>
+              </div>
+            </label>
+            <input type="radio" name="plan" id="arcade-yearly" value="90">
+          </div>
+
+          <div class="custom-radio">
+            <label for="advanced-yearly">
+              <div>
+                <img src="./assets/images/icon-advanced.svg" alt="advanced icon">
+              </div>
+  
+              <div class="custom-radio-info">
+                <h2>Advanced</h2>
+                <p>$120/yr</p>
+                <small>2 months free</small>
+              </div>
+            </label>
+            <input type="radio" name="plan" id="advanced-yearly" value="120">
+          </div>
+          
+          <div class="custom-radio">
+            <label for="pro-yearly">
+              <div>
+                <img src="./assets/images/icon-pro.svg" alt="pro icon">
+              </div>
+  
+              <div class="custom-radio-info">
+                <h2>Pro</h2>
+                <p>$150/yr</p>
+                <small>2 months free</small>
+              </div>
+            </label>
+            <input type="radio" name="plan" id="pro-yearly" value="150">
+          </div>
+        </div>
+
+        <div class="toggle-plan-duration">
+          <p class="active">Monthly</p>
+          <label for="plan-duration" class="custom-slider">
+            <input type="checkbox" name="plan-duration" id="plan-duration">
+            <span class="slider"></span>
+          </label>
+          <p>Yearly</p>
+        </div>
+  
+        <div class="form-jump flex">
+          <a href="#" class="prev-form-btn">Go Back</a>
+          <a href="#" class="nxt-form-btn">Next Step</a>
+        </div>
+      </div>
+      <!-- Step 2 end -->
+
+      <!-- Step 3 start -->
+      <div class="form-step">
+        <h1 class="txt-clr-marine-blue form-step-head">Pick add-ons</h1>
+        <p class="txt-clr-cool-gray form-step-desc">Add-ons help enhance your gaming experience.</p>
+
+        <div class="checkbox-group active">
+          <label for="online-service-mo" class="custom-checkbox">
+            <input type="checkbox" name="online-service-mo" id="online-service-mo" value="1">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Online service</p>
+                <small class="txt-clr-cool-gray">Access to multiplayer games</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$1/mo</small>
+            </div>
+          </label>
+          
+
+          <label for="larger-storage-mo" class="custom-checkbox">
+            <input type="checkbox" name="larger-storage-mo" id="larger-storage-mo" value="2">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Larger storage</p>
+                <small class="txt-clr-cool-gray">Extra 1TB of cloud save</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$2/mo</small>
+            </div>
+          </label>
+          
+          
+          <label for="customizable-profile-mo" class="custom-checkbox">
+          <input type="checkbox" name="customizable-profile-mo" id="customizable-profile-mo" value="2">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Customizable profile</p>
+                <small class="txt-clr-cool-gray">Custom theme on your profile</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$2/mo</small>
+            </div>
+          </label>
+        </div>
+
+        <div class="checkbox-group">
+          <label for="online-service-yr" class="custom-checkbox">
+            <input type="checkbox" name="online-service-yr" id="online-service-yr" value="10">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Online service</p>
+                <small class="txt-clr-cool-gray">Access to multiplayer games</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$10/yr</small>
+            </div>
+          </label>
+
+          <label for="larger-storage-yr" class="custom-checkbox">
+            <input type="checkbox" name="larger-storage-yr" id="larger-storage-yr" value="20">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Larger storage</p>
+                <small class="txt-clr-cool-gray">Extra 1TB of cloud save</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$20/yr</small>
+            </div>
+          </label>
+          
+          
+          <label for="customizable-profile-yr" class="custom-checkbox">
+            <input type="checkbox" name="customizable-profile-yr" id="customizable-profile-yr" value="20">
+            <div class="flex">
+              <div>
+                <p class="txt-clr-marine-blue fw-500">Customizable profile</p>
+                <small class="txt-clr-cool-gray">Custom theme on your profile</small>
+              </div>
+
+              <small class="txt-clr-purplish-blue">+$20/yr</small>
+            </div>
+          </label>
+        </div>
+
+        <div class="form-jump flex">
+          <a href="#" class="prev-form-btn">Go Back</a>
+          <a href="#" class="nxt-form-btn">Next Step</a>
+        </div>
+      </div>
+      <!-- Step 3 end -->
+
+      <!-- Step 4 start -->
+      <div class="form-step">
+        <h1 class="form-step-head txt-clr-marine-blue">Finishing Up</h1>
+        <p class="form-step-desc txt-clr-cool-gray">Double-check everything looks OK before confirming</p>
+
+        <div>
+          <div class="bg-magnolia chosen-opts">
+            <div class="flex primary-option">
+              <div>
+                <p class="fw-500 txt-clr-marine-blue">
+                  <span class="plan"></span>(<span class="duration"></span>)
+                </p>
+                <a class="txt-clr-cool-gray" href="#">Change</a>
+              </div>
+              <small class="fw-700 txt-clr-marine-blue">$9/mo</small>
+            </div>
+            <div class="divider"></div>
+            
+          </div>
+          <div class="flex total-subscription">
+            <small class="txt-clr-cool-gray"></small>
+            <p class="txt-clr-purplish-blue fw-700"></p>
+          </div>
+        </div>
+
+        <div class="form-jump flex">
+          <a href="#" class="prev-form-btn">Go Back</a>
+          <a href="#" class="nxt-form-btn">Confirm</a>
+        </div>
+      </div>
+      <!-- Step 4 end -->
+
+      <!-- Step 5 start -->
+      <div class="form-step h-50">
+        <div class="outer">
+          <div class="inner">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9">
+              <path fill="none" stroke="hsl(354, 84%, 57%)" stroke-width="2" d="m1 4 3.433 3.433L10.866 1"/>
+            </svg>
+          </div>
+        </div>
+
+        <h1 class="form-step-head txt-clr-marine-blue">Thank you!</h1>
+        <p class="form-step-desc txt-clr-cool-gray">Thanks for confirming your subscription! We hope you have fun 
+          using our platform. If you ever need support, please feel free 
+          to email us at support@loremgaming.com.</p>
+      </div>
+      <!-- Step 5 end -->
+    </form>
+  </main>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
