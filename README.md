@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   Solution URL: [github](https://github.com/augustine-a8/multi-step-form.git)
+-   Live Site URL: [https://augustine-a8.github.io/multi-step-form/](https://augustine-a8.github.io/multi-step-form/)
 
 ## My process
 
